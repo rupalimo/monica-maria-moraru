@@ -91,6 +91,7 @@ a:focus,
 a:hover {
 	cursor: help;
 	text-decoration: underline;
+	background-color: var(--text-color-secondary);
 }
 
 /* Headings */
@@ -133,7 +134,7 @@ section:last-of-type {
 }
 
 p {
-	line-height: 120%;
+	line-height: 125%;
 }
 
 /* BIO SUB PAGE MAIN */
