@@ -99,6 +99,29 @@ h1 {
 }
 
 
+/* BIO SUB PAGE MAIN */
+
+#subpage-bio {
+	grid-column: 1 / 3;
+	margin: 4rem 10%;
+	border: 0;
+	padding: 0;
+}
+
+#subpage-bio h1 {
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 1rem;
+}
+
+#subpage-bio div {
+	margin-bottom: 2rem;
+}
+
+#subpage-bio ul li {
+	list-style: none;
+	padding: 0;
+}
 /* Body Text */
 section {
 	border-right: 1px dashed var(--text-color);
@@ -110,8 +133,11 @@ section:last-of-type {
 }
 
 p {
-	line-height: 150%;
+	line-height: 120%;
 }
+
+/* BIO SUB PAGE MAIN */
+
 
 /* Images */
 figure {
