@@ -1,5 +1,7 @@
+@import 'fonts.css';
+
 :root {
-	--primary-font: 'Arial', sans-serif;
+	--primary-font: 'Asadera', sans-serif;
 	--text-color: #3d114e;
 	--text-color-secondary: #3bf53e;
 	--accent-color: #bebb00;

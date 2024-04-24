@@ -1,0 +1,41 @@
+/* @font-face {
+	font-family: 'Authentic-Sans-90-reg';
+	src: url('../fonts/AUTHENTICSans-90.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Authentic-Sans-90';
+	src: url('../fonts/AUTHENTICSans-Condensed-90.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Authentic-Sans-130';
+	src: url('../fonts/AUTHENTICSans-Condensed-130.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+} */
+
+@font-face {
+	font-family: 'Asadera';
+	src: url('../fonts/Asadera-regular.ttf') format('ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Hind';
+	src: url('../fonts/Hind-Regular.ttf') format('ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Ovo';
+	src: url('../fonts/Dauphine-Regular.otf') format('otf');
+	font-weight: normal;
+	font-style: normal;
+}
