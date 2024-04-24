@@ -20,22 +20,19 @@
 } */
 
 @font-face {
-	font-family: 'Asadera';
-	src: url('../fonts/Asadera-regular.ttf') format('ttf');
-	font-weight: normal;
-	font-style: normal;
+	font-family: 'op1';
+	src: url('../fonts/Asadera-regular.otf');
 }
 
 @font-face {
-	font-family: 'Hind';
-	src: url('../fonts/Hind-Regular.ttf') format('ttf');
-	font-weight: normal;
-	font-style: normal;
+	font-family: 'op2';
+	src: url('../fonts/AUTHENTICSans-60.otf');
+
 }
 
+
 @font-face {
-	font-family: 'Ovo';
-	src: url('../fonts/Dauphine-Regular.otf') format('otf');
-	font-weight: normal;
-	font-style: normal;
+	font-family: 'op3';
+	src: url('../fonts/AUTHENTICSans-90.otf');
+
 }
