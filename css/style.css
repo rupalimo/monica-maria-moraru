@@ -110,7 +110,7 @@ a:hover {
 }
 
 .vline {
-	border-left: 1px solid var(--text-color-secondary);
+	border-left: 1px solid var(--text-color);
 	height: 100%;
   position: fixed;
   top: 0;
