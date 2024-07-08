@@ -54,6 +54,7 @@ a:hover {
 /* MENU */
 
 .menu__wrapper {
+		font-size: 1.25rem;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -66,7 +67,7 @@ a:hover {
 }
 
 .menu--title {
-	font-size: 1.6rem;
+	/* font-size: 1.25rem; */
 	font-weight: 400;
 	margin: 0;
 	padding: 2rem 1rem;
@@ -81,7 +82,7 @@ a:hover {
 	flex-direction: column;
 	flex-wrap: wrap;
 	padding: 1rem;
-	font-size: 1.6rem;
+	/* font-size: 1.6rem; */
 	margin: 1rem 0;
 	height: fit-content;
 	background: white;
@@ -101,7 +102,7 @@ a:hover {
 }
 
 .menu--contact {
-	font-size: 1.6rem;
+	/* font-size: 1.6rem; */
 	background: white;
 	padding: 2rem 1rem;
 	/* border-top: 1px solid var(--text-color-secondary);
