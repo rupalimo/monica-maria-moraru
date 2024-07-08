@@ -8,7 +8,7 @@
 	color: var(--text-color);
 	cursor: crosshair;
 	font-family: var(--primary-font);
-	font-size: calc(0.35em + 1vw);
+	font-size: calc(0.25em + 1vw);
 	letter-spacing: 0.0025em;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -56,8 +56,11 @@ a:hover {
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	//border-right: 1px solid var(--text-color);
+	/* border-right: 1px solid var(--text-color); */
 	height: 100vh;
+	position: sticky;
+	left: 0;
+	top: 0;
 }
 
 .menu--title {
@@ -66,8 +69,8 @@ a:hover {
 	margin: 0;
 	padding: 2rem 1rem;
 	border-bottom: 1px solid var(--text-color);
-		border-right: 1px solid var(--text-color);
-		border-radius: 0 0 4rem 0;
+	border-right: 1px solid var(--text-color);
+	border-radius: 0 0 4rem 0;
 }
 
 .menu--nav {
@@ -97,15 +100,13 @@ a:hover {
 	font-size: 1.6rem;
 	border-top: 1px solid var(--text-color);
 	padding: 2rem 1rem;
-	position: relative;
-	bottom: 0;
-		border-right: 1px solid var(--text-color);
-		border-radius: 0 4rem 0 0;
+	border-right: 1px solid var(--text-color);
+	border-radius: 0 4rem 0 0;
 }
 
 /* BIO SUB PAGE MAIN */
 
-#subpage-bio {
+/* #subpage-bio {
 	grid-column: 1 / 3;
 	margin: 4rem 10%;
 	border: 0;
@@ -125,7 +126,7 @@ a:hover {
 #subpage-bio ul li {
 	list-style: none;
 	padding: 0;
-}
+} */
 
 /* MAIN PROJECT SECTION */
 
@@ -134,16 +135,35 @@ a:hover {
 	display: grid;
 	grid-template-columns: 3fr 1fr;
 	grid-template-rows: 3fr 1fr;
+	color: black;
 }
 
 .main__projects {
-	padding: 1rem;
+	padding: 1rem 3rem;
+	grid-column: 1/3;
+
+}
+
+.main__projects h1 {
+	text-transform: uppercase;
+}
+.main__projects ul {
+padding: 0;
+}
+
+.main__projects li {
+	list-style: none;
+	font-size: 0.9rem;
+}
+
+.main__projects p {
+	text-align: justify;
 }
 
 .main__notes {
-	border-left: 1px dashed var(--text-color);
+	/* border-left: 1px dashed var(--text-color); */
 	padding: 1rem;
-	grid-row: 1/3;
+	/* grid-row: 1/3; */
 	grid-column: 2;
 }
 
@@ -168,21 +188,6 @@ img:focus {
 	transition: 0.5s;
 }
 
-/* figure {
-	float: left;
-	width: 15em;
-	max-width: 100%;
-	margin-left: 0;
-}
-
-figure::after {
-	clear: both;
-}
-
-figcaption {
-	font-style: italic;
-	font-size: 0.8em;
-} */
 
 /* Breakpoint */
 @media (max-width: 788px) {
