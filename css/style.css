@@ -54,7 +54,7 @@ a:hover {
 /* MENU */
 
 .menu__wrapper {
-		font-size: 1.25rem;
+	font-size: 1.25rem;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -158,6 +158,11 @@ a:hover {
 	grid-column: 1/3;
 }
 
+.main__projects article {
+	border-top: 1px solid var(--text-color-secondary);
+	padding: 2rem 0 4rem 0;
+}
+
 .main__projects h1 {
 	text-transform: uppercase;
 }
@@ -176,9 +181,28 @@ a:hover {
 	font-family: var(--light-font);
 }
 
-.main__projects img {
+.main__projects img,
+.main__projects .screening {
 	width: 80%;
 	margin-left: 20%;
+}
+
+.main__projects .screening h5 {
+	text-transform: uppercase;
+}
+
+.main__projects .screening ul {
+	padding: 0 1rem;
+}
+
+.main__projects .screening li::before {
+	content: ' >';
+	background: var(--text-color-secondary);
+	margin-right: 4px;
+}
+
+.main__projects .screening li {
+	font-size: 1rem;
 }
 
 .main__notes {
@@ -188,12 +212,12 @@ a:hover {
 	grid-column: 2;
 }
 
-.main__archive {
+/* .main__archive {
 	border-top: 1px dashed var(--text-color-secondary);
 	padding: 1rem;
 	grid-column: 1 / 3;
 	grid-row: 2;
-}
+} */
 
 img {
 	width: 100%;
