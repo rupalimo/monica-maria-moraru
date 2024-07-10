@@ -4,8 +4,9 @@
 	--primary-font: 'op3', sans-serif;
 	--light-font: 'op2', sans-serif;
 	--alt-font: 'op1', sans-serif;
-	--text-color: #3d114e;
-	--text-color-secondary: #3bf53e;
+	--menu-color: #3a08c4;
+  --text-color: #662eff;
+	--text-color-secondary: #996a0b;
 	--accent-color: #bebb00;
 	color: var(--text-color);
 	cursor: crosshair;
@@ -39,21 +40,32 @@ p {
 }
 
 a {
-	color: var(--text-color);
 	font-weight: normal;
 	text-decoration: none;
 }
 
 a:focus,
 a:hover {
-	cursor: help;
-	text-decoration: underline;
-	background-color: var(--text-color-secondary);
+	cursor: none;
+	text-decoration: none;
+}
+
+.menu__wrapper a {
+	color: var(--menu-color);
+}
+
+.main__wrapper a {
+	color: var(--text-color);
+}
+	.menu--nav a:hover {
+	color: var(--text-color);
+	background: var(--text-color-secondary);
 }
 
 /* MENU */
 
 .menu__wrapper {
+	color: var(--menu-color);
 	font-size: 1.25rem;
 	display: flex;
 	flex-direction: column;
@@ -64,6 +76,13 @@ a:hover {
 	position: sticky;
 	left: 0;
 	top: 0;
+	/* background: rgb(0, 255, 42); */
+	/* background: linear-gradient(
+		90deg,
+		rgba(0, 255, 42, 1) 0%,
+		rgba(255, 255, 255, 1) 80%,
+		rgba(255, 255, 255, 1) 100%
+	); */
 }
 
 .menu--title {
@@ -73,8 +92,8 @@ a:hover {
 	padding: 2rem 1rem;
 	/* border-bottom: 1px solid var(--text-color-secondary);
 	border-right: 1px solid var(--text-color-secondary); */
-	border-radius: 0 0 4rem 0;
 	background: white;
+	color: var(--menu-color);
 }
 
 .menu--nav {
@@ -84,8 +103,10 @@ a:hover {
 	padding: 1rem;
 	/* font-size: 1.6rem; */
 	margin: 1rem 0;
+	transform: translateX(8px);
 	height: fit-content;
 	background: white;
+	border-radius: 2rem 0 0 2rem;
 }
 
 .menu--nav a {
@@ -111,7 +132,7 @@ a:hover {
 }
 
 .vline {
-	border-left: 1px solid var(--text-color);
+	border-left: 1px solid var(--text-color-secondary);
 	height: 100%;
 	position: fixed;
 	top: 0;
@@ -150,7 +171,7 @@ a:hover {
 	display: grid;
 	grid-template-columns: 3fr 1fr;
 	grid-template-rows: 3fr 1fr;
-	color: black;
+	color: var(--text-color);
 }
 
 .main__projects {
@@ -205,6 +226,11 @@ a:hover {
 	font-size: 1rem;
 }
 
+.main__projects .screening span {
+	padding: 0 16px;
+	color: var(--text-color-secondary);
+}
+
 .main__notes {
 	/* border-left: 1px dashed var(--text-color); */
 	padding: 1rem;
@@ -221,16 +247,18 @@ a:hover {
 
 img {
 	width: 100%;
-	opacity: 0.5;
+	opacity: 0.75;
 	transition-timing-function: ease-out;
-	transition: 0.5s;
+	transition: 0.75s;
+	filter: invert(60%);
 }
 
 img:hover,
 img:focus {
 	opacity: 1;
 	transition-timing-function: ease-in;
-	transition: 0.5s;
+	transition: 0.75s;
+	filter: invert(0%);
 }
 
 /* Breakpoint */
