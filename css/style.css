@@ -57,7 +57,8 @@ a:hover {
 .main__wrapper a {
 	color: var(--text-color);
 }
-.menu--nav a:hover {
+
+.menu--nav a:hover, .menu--title a:hover, .menu--contact a:hover {
 	color: var(--text-color);
 	background: var(--text-color-secondary);
 }
@@ -193,8 +194,8 @@ a:hover {
 }
 
 .main__projects .projects--home img {
-	height: 80%;
-	width: auto;
+	height: auto;
+	width: 50vh;
 	margin: 0;
 	opacity: 1;
 	filter: invert(0);
