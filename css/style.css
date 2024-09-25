@@ -130,7 +130,9 @@ a:hover {
 	color: var(--text-color-secondary);
 	text-transform: uppercase;
 	font-size: 12px;
-	margin-top: 4rem;
+	margin-top: 3rem;
+	border-top: 1px dotted var(--text-color-secondary);
+	padding-top: 2px;
 }
 
 .menu__wrapper a.link__active {
