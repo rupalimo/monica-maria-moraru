@@ -295,6 +295,83 @@ img:focus {
 	filter: invert(0%);
 }
 
+/* AUDIO PLAYER */
+
+.content {
+	grid-column: 2/4;
+}
+
+.music-titles {
+	display: flex;
+	flex-direction: row;
+	border-top: 1px solid var(--text-color-secondary);
+	border-right: 1px solid var(--text-color-secondary);
+	border-left: 1px solid var(--text-color-secondary);
+	margin: 0;
+	padding: 0 1rem;
+}
+
+.music-titles .name {
+	margin: 1rem 0;
+}
+.control-btn {
+	align-items: baseline;
+	cursor: default;
+}
+
+.control-btn .play-pause {
+
+	margin: 2.5rem 0 0.125rem 0;
+  border-top: 1px dotted var(--text-color);
+  padding-top: 0.5rem;
+  text-align: center;
+
+}
+
+.control-btn .play-pause:hover {
+	cursor: default;
+		font-style: italic;
+		
+}
+
+.control-btn div:active {
+	color: var(--accent-color);
+	font-style: italic;
+	cursor: default;
+}
+
+.progress-wrapper {
+	padding: 0 1rem 0.5rem 1rem;
+	border-bottom: 1px solid var(--text-color-secondary);
+	border-right: 1px solid var(--text-color-secondary);
+	border-left: 1px solid var(--text-color-secondary);
+}
+
+.progress-details {
+	height: 1rem;
+	background-color: var(--text-color-secondary);
+}
+
+.progress-bar {
+	width: 0%;
+	height: inherit;
+	background-color: var(--text-color);
+	position: relative;
+	cursor: default;
+}
+
+.progress-details:hover .progress-bar span {
+	opacity: 1;
+}
+
+.time {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem 0;
+	font-size: 12px
+}
+
 /* Breakpoint */
 @media (max-width: 788px) {
 	body {

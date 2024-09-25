@@ -2,11 +2,14 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
 		<title>Monica Maria Moraru</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!-- <script async src="js/playlist.js"></script>
+		<script async src="js/script.js"></script> -->
 	</head>
 
 	<body>
@@ -20,8 +23,8 @@
 			</h1>
 			<nav class="menu--nav">
 				<div>
-					<a href="#notAnHou">Not An Hour</a>
 					<a href="#iAmAlsoP">I Am Also Part of the Three Turns</a>
+					<a href="#notAnHou">Not An Hour</a>
 					<a href="#antFurna">An Ant in the Mouth of a Furnace</a>
 					<a href="#thereThe">There There Now</a>
 					<a href="#hereItIs">Here It Is Saturday</a>
@@ -177,6 +180,38 @@
 						<img src="not an hour/4.jpg" />
 						<img src="not an hour/5.jpg" />
 					</div>
+<!-- AUDIO PLAYER -->
+<div class="content">
+			<div class="top-bar"></div>
+			<div class="image-wrapper">
+				<div class="music-image">
+				</div>
+			</div>
+			<div class="music-titles">
+				<span>
+					<p class="name">sound excerpt louder.mp3</p>
+				</span>
+
+			</div>
+			<div class="progress-wrapper">
+				<div class="progress-details">
+				<div class="progress-bar">
+					<span></span>
+				</div>
+				<div class="time">
+					<span class="current">0:00</span>
+					<span class="final">01:30</span>
+				</div>
+			</div>
+			<div class="control-btn">
+			
+				<div class="play-pause">
+					<span class="material-symbols-rounded">play</span>
+				</div>
+			</div>
+		</div>
+					<audio src="music/sound-excerpt.mp3" class="main-song"></audio>
+
 				</article>
 
 				<div class="divider"></div>
@@ -313,10 +348,21 @@
 					<div class="project__content">
 						<p class="project--poem">
 							<span>Inside, a rectangular block of sunlight takes shape.</span>
-							<span>The rectangle shrinks in width and climbs down the wall as the sun climbs higher on its daily course</span>
-							<span class="poem--break">Soon, the sun breaks the stillness of noon and moves west</span>
-							<span>A reflection of the parked car across the street streaks across the kitchen</span>
-							<span class="poem--break">The kind of light that transmits–in its lack–the very shape of things This is the light of midnight and noon</span>
+							<span
+								>The rectangle shrinks in width and climbs down the wall as the
+								sun climbs higher on its daily course</span
+							>
+							<span class="poem--break"
+								>Soon, the sun breaks the stillness of noon and moves west</span
+							>
+							<span
+								>A reflection of the parked car across the street streaks across
+								the kitchen</span
+							>
+							<span class="poem--break"
+								>The kind of light that transmits–in its lack–the very shape of
+								things This is the light of midnight and noon</span
+							>
 						</p>
 					</div>
 					<div class="project__imgs">
@@ -331,5 +377,8 @@
 				<div class="divider"></div>
 			</section>
 		</main>
+
+		<script src="js/playlist.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
