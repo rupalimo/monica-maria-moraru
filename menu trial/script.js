@@ -1,20 +1,3 @@
-// function menu(evt, projectName) {
-
-//   menufocus = document.getElementsByClassName("menufocus");
-//   for (i = 0; i < menufocus.length; i++) {
-//     menufocus[i].className = menufocus[i].className.replace(" active", "");
-//   }
-  
-//   evt.currentTarget.className += " active";
-// }
-
-// using jquery:
-// $('.menu--nav div a').click(function () {
-// 	var that = $(this);
-// 	that.addClass('active');
-// 	that.parent().siblings().find('a').removeClass('active');
-// });
-
 $(document).ready(function () {
 	var goToByScroll = function (id) {
 		$('html,body').animate({ scrollTop: $('#' + id).offset().top }, 'slow');
@@ -22,12 +5,14 @@ $(document).ready(function () {
 
 	//create a list of all elements to be tested against
 	var scrollMatches = [
-		$('#iAmAlsoP'),
-		$('#notAnHou'),
-		$('#antFurna'),
-		$('#thereThe'),
-		$('#hereItIs'),
-		$('#inMyBedr')
+		$('#photos'),
+		$('#studio'),
+		$('#rates'),
+		$('#features'),
+		$('#plan'),
+		$('#contact'),
+		$('#you'),
+		$('#me'),
 	];
 
 	$(window).on('scroll', function () {
@@ -41,7 +26,7 @@ $(document).ready(function () {
 			// if the element is in the viewport
 			if (offset.top <= scroll && offset.top + v.outerHeight() > scroll) {
 				// get associated element
-				var element = $('#menu div > a[rel=' + v.attr('rel') + ']');
+				var element = $('.menu li > a[rel=' + v.attr('rel') + ']');
 
 				// do whatever you want to the current tested element
 				element.css('color', 'rgb(102, 46, 255)');
@@ -54,7 +39,7 @@ $(document).ready(function () {
 	});
 	$(window).scroll();
 	//for menu elements
-	$('#menu div a').on('click', function () {
+	$('.menu li a').on('click', function () {
 		goToByScroll($(this).attr('rel'));
 	});
 });

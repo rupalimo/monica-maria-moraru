@@ -1,0 +1,34 @@
+article#photos,
+article#studio,
+article#rates,
+article#features,
+article#plan,
+article#contact,
+article#you,
+article#me {
+    border:solid 1px #444444;
+    height:90vh;
+margin: 4rem 0;
+    display:block;
+}
+.menu{
+    position:fixed;
+display: flex;
+    flex-direction: column;
+    width:200px;
+    height: 100%;
+}
+.menu ul{
+    list-style-type: none;  
+  
+    margin:0 auto;
+}
+.menu ul li {
+margin: 4rem 0;
+}
+.menu a{
+    text-decoration:none;
+    color:#000000;
+
+    padding:3px 12px;
+}

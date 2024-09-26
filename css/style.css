@@ -34,7 +34,7 @@ html {
 body {
 	display: grid;
 	grid-template-columns: minmax(min-content, 20%) 1fr;
-	overflow: hidden;
+	/* overflow: hidden; */
 	height: 100vh;
 }
 
@@ -153,15 +153,8 @@ a:hover {
 
 .main__wrapper {
 	overflow-y: scroll;
-	/* display: grid;
-	grid-template-columns: 3fr 1fr;
-	grid-template-rows: 3fr 1fr; */
 	color: var(--text-color);
 	padding: 1rem 2vw 1rem 4vw;
-}
-
-.main__projects {
-	/* grid-column: 1/3; */
 }
 
 .main__projects article {
