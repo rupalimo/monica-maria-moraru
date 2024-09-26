@@ -60,15 +60,13 @@ a:hover {
 	color: var(--menu-color);
 }
 
-.main__wrapper a {
-	color: var(--text-color);
-}
-
-.menu--nav a:hover,
-.menu--title a:hover,
-.menu--contact a:hover {
+.menu__wrapper a:hover {
 	color: var(--text-color);
 	background: var(--text-color-secondary);
+}
+
+.menu--nav a.active {
+	color: var(--text-color);
 }
 
 .menu__wrapper {
@@ -118,6 +116,7 @@ a:hover {
 	content: '';
 }
 
+
 .menu--contact {
 	background: white;
 	padding: 2rem 0;
@@ -136,7 +135,12 @@ a:hover {
 }
 
 /* MAIN PROJECT SECTION */
-.menu__wrapper a.link__active {
+
+.main__wrapper a {
+	color: var(--text-color);
+}
+
+.menu__wrapper a.link__active  {
 	background: var(--text-color-secondary);
 	color: var(--text-color);
 }
