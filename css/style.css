@@ -141,7 +141,7 @@ a:hover {
 }
 
 .menu__wrapper a.link__active  {
-	background: var(--text-color-secondary);
+	/* background: var(--text-color-secondary); */
 	color: var(--text-color);
 }
 
