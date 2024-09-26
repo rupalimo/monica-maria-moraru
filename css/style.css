@@ -145,7 +145,7 @@ a:hover {
 	color: var(--text-color);
 }
 
-.main__wrapper .cv--year,
+.cv--year,
 .main__wrapper .screening--year {
 	color: var(--accent-color);
 }
@@ -196,13 +196,11 @@ a:hover {
 	grid-column: 1/4;
 }
 
-.main__projects .project__details,
-.main__projects .cv__details {
+.main__projects .project__details, .cv__details {
 	grid-column: 1;
 }
 
-.main__projects .project__content,
-.main__projects .cv__content {
+.main__projects .project__content, .cv__content {
 	grid-column: 2/4;
 }
 
@@ -252,6 +250,11 @@ a:hover {
 .project--poem .poem--break {
 	margin-top: 1rem;
 }
+/* 
+.main__projects article.cv--stack {
+	padding: 2rem 0;
+} */
+
 
 /* AUDIO PLAYER */
 
