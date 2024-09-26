@@ -6,8 +6,8 @@
 	/* --light-font: 'op2', sans-serif; */
 	--light-font: 'Arial', sans-serif;
 	--alt-font: 'op1', sans-serif;
-	--menu-color: #464646;
-	--text-color: #662eff;
+	--menu-color: rgb(70, 70, 70);
+	--text-color: rgb(102, 46, 255);
 	--text-color-secondary: rgb(232, 230, 234);
 	--accent-color: #37b944;
 	/* --accent-color: #e49342; */
@@ -65,9 +65,10 @@ a:hover {
 	background: var(--text-color-secondary);
 }
 
-.menu--nav a.active {
+.menu--nav a.active, .active {
 	color: var(--text-color);
 }
+
 
 .menu__wrapper {
 	color: var(--menu-color);
