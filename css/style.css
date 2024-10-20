@@ -345,7 +345,7 @@ h2 {
 /* CV PAGE */
 .main__projects article.cv--stack .cv__content li {
 	display: grid;
-	grid-template-columns: 40px auto;
+	grid-template-columns: 42px auto;
 }
 
 
