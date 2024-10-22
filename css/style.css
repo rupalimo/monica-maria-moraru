@@ -13,7 +13,7 @@
 	color: var(--text-color);
 	cursor: default;
 	font-family: var(--primary-font);
-	font-size: 14px;
+	font-size: 16px;
 	letter-spacing: 0.0025em;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -55,20 +55,16 @@ a:hover {
 	text-decoration: none;
 }
 
-img {
-	width: 100%;
-	/* opacity: 0.75; */
-	/* transition-timing-function: ease-out; */
-	/* transition: 0.75s; */
-	/* filter: invert(5%); */
+ul {
+	padding: 0;
+	list-style: none;
 }
 
-img:hover,
-img:focus {
-	/* opacity: 1;
-	transition-timing-function: ease-in;
-	transition: 0.75s; */
+
+img {
+	width: 100%;
 }
+
 
 /* MENU */
 
@@ -91,7 +87,7 @@ img:focus {
 
 .menu__wrapper {
 	color: var(--menu-color);
-	font-size: 1.25rem;
+	font-size: 1rem;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -148,7 +144,7 @@ img:focus {
 	color: var(--accent-color);
 	text-transform: uppercase;
 	font-size: 12px;
-	margin: 2rem 0;
+	margin: 1rem 0;
 	padding-top: 2px;
 }
 
@@ -182,7 +178,7 @@ img:focus {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 	padding: 4rem 0 8rem 0;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	grid-column-gap: 4rem;
 }
 
@@ -210,6 +206,10 @@ img:focus {
 	grid-column: 1/4;
 }
 
+.main__projects .project__details {
+	position: relative;
+}
+
 .main__projects .project__details,
 .cv__details {
 	grid-column: 1;
@@ -217,7 +217,7 @@ img:focus {
 
 
 h2 {
-	font-size: 1.25rem;
+	font-size: 1rem;
 	font-weight: 400;
 }
 
@@ -226,121 +226,37 @@ h2 {
 	grid-column: 2/4;
 }
 
-.main__projects .project__imgs {
+.main__projects .project__content .project__screenings {
+	margin: 2rem 0;
+}
+
+.project__content p + .project__imgs {
 	padding: 1rem 0;
 }
 
-.main__projects h1 {
+.project__content p + .content {
+	padding-bottom: 2rem;
+}
+
+.main__projects .sticky {
+	position: sticky;
+		top: 1rem;
+}
+
+.main__projects .sticky h1 {
 	font-weight: 400;
 	margin: 1rem 0;
 	font-size: 24px;
 	text-transform: capitalize;
-	position: sticky;
 }
 
-.main__projects ul {
+.main__projects .sticky ul {
 	padding: 0;
 	margin: 1rem 0;
-	position: sticky;
-}
-
-/* RULES FOR SCROLLING PROJECT TITLES  */
-.main__projects #iAmAlsoP h1 {
-	top: 1rem;
-}
-
-.main__projects #iAmAlsoP ul {
-	top: 10rem;
-}
-
-.main__projects #notAnHou h1 {
-	top: 1rem;
-}
-
-.main__projects #notAnHou ul {
-	top: 4rem;
-}
-
-.main__projects #notAnHou ul+ul {
-	top: 7rem;
-}
-
-.main__projects #antFurna h1 {
-	top: 1rem;
-}
-
-.main__projects #antFurna ul {
-	top: 6rem;
-}
-
-.main__projects #antFurna ul+ul {
-	top: 9rem;
-}
-
-.main__projects #thereThe h1 {
-	top: 1rem;
-}
-
-.main__projects #thereThe ul {
-	top: 4rem;
-}
-
-.main__projects #hereItIs h1 {
-	top: 1rem;
-}
-
-.main__projects #hereItIs ul {
-	top: 4rem;
-}
-
-.main__projects #hereItIs ul+ul {
-	top: 7rem;
-}
-
-.main__projects #hereItIs ul:nth-of-type(3) {
-	top: 11rem;
-}
-
-.main__projects #inMyBedr h1 {
-	top: 1rem;
-}
-
-.main__projects #inMyBedr ul {
-	top: 6rem;
-}
-
-.main__projects .project__details ul {
+	list-style: none;
 	font-size: 12px;
 }
 
-.main__projects li {
-	list-style: none;
-}
-
-.main__projects p {
-	text-align: justify;
-	font-family: var(--light-font);
-}
-
-.main__projects img {
-	width: 100%;
-}
-
-.main__projects .project__screenings {
-	padding: 1rem 0;
-}
-
-.project--poem span {
-	display: block;
-}
-
-.project--poem .poem--indent {
-	padding-left: 1rem;
-}
-
-.project--poem .poem--break {
-	margin-top: 1rem;
-}
 
 /* CV PAGE */
 .main__projects article.cv--stack .cv__content li {
@@ -383,7 +299,8 @@ h2 {
 
 .control-btn .play-pause:hover {
 	cursor: default;
-	font-style: italic;
+	/* font-style: italic; */
+	color: var(--text-color-secondary);
 }
 
 .control-btn div:active {
