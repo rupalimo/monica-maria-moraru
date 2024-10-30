@@ -257,6 +257,17 @@ h2 {
 	font-size: 12px;
 }
 
+.project--poem span {
+	display: block;
+}
+
+.project--poem .poem--indent {
+	padding-left: 1rem;
+}
+
+.project--poem .poem--break {
+	margin-top: 1rem;
+}
 
 /* CV PAGE */
 .main__projects article.cv--stack .cv__content li {
