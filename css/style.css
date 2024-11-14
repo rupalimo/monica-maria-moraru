@@ -403,10 +403,12 @@ h2 {
 		border-right: 0;
 		border-bottom: 2px solid var(--accent-color);
 		height: fit-content;
-		padding: 0 0 2rem 0;
-		margin: 1rem 1rem 0 1rem;
+		padding: 1rem 1rem 2rem 1rem;
 		display: grid;
 		grid-template-columns: 50% 50%;
+		background-color: white;
+		z-index: 100;
+		position: fixed;
 	}
 
 	.menu--title,
@@ -449,6 +451,10 @@ h2 {
 		margin: 0 1rem 1rem 1rem;
 	}
 
+	.main__projects {
+		padding: 0 1rem;
+	}
+
 	.main__projects article {
 		padding: 4rem 0;
 	}
@@ -465,6 +471,10 @@ h2 {
 	.main__projects .footnotes__wrapper,
 	.content {
 		grid-column: 1/4;
+	}
+
+p {
+		text-align: justify;
 	}
 
 	.main__projects .footnotes__wrapper {
