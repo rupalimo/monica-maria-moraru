@@ -448,20 +448,25 @@ h2 {
 	/* PROJECT CONTENT */
 	.main__wrapper {
 		padding: 0;
-		margin: 0 1rem 1rem 1rem;
+		margin: 20vh 0rem 0rem 0rem;
 	}
 
 	.main__projects {
-		padding: 0 1rem;
+		padding: 1rem;
 	}
 
 	.main__projects article {
 		padding: 4rem 0;
+
 	}
 
+		.main__projects .projects--home img {
+			margin-top: 20vh;
+			width: 46vh;
+		}
+
 	.main__projects .projects--home {
-		height: 78vh;
-		padding: 0 0 1rem 0;
+
 	}
 
 	.main__projects .project__details,
@@ -479,7 +484,10 @@ p {
 
 	.main__projects .footnotes__wrapper {
 		padding: 1rem 0 2rem 0;
+		grid-column-gap: 0rem;
 	}
+
+	
 
 	.footnotes__wrapper h1 {
 		padding-top: 3rem;
