@@ -7,23 +7,26 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
 		<title>monica maria moraru</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<!-- jquery CDN -->
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+		<script async src="js/intersection.js"></script>
 		<script async src="js/playlist.js"></script>
 		<script async src="js/script.js"></script>
-		<script async src="js/menu.js"></script>
+		<!-- <script async src="js/menu.js"></script> -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
 
 	<body>
-		<!-- LEFT HAND MENU -->
-		<!-- <header class="menu__wrapper">
-		
-		</header> -->
-
 		<!-- MAIN PROJECT SECTION BEGINS -->
 
 		<aside class="menu__wrapper">
 			<nav class="menu--nav">
-				<div>
+				<div id="nav">
 					<a
 						href="#home"
 						class="menufocus menu--title"
@@ -56,11 +59,9 @@
 			</div>
 		</aside>
 		<section class="main__projects">
-			<div class="divider"></div>
 			<article id="home" class="projects--home">
 				<img src="i am also/0.jpg" />
 			</article>
-			<div class="divider"></div>
 
 			<!-- PROJECT : I Am Also Part of the Three Turns-->
 			<article id="iAmAlsoP" class="projects--iAmAlsoP">

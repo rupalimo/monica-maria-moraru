@@ -1,14 +1,29 @@
-// define observer options
-const options = {
-  root: null,
-  rootMargin: "-2px",
-  threshold: 1.0,
-};
+// ------ menu waterfall scrolling interaction ----------
 
-// configure intersection observer to track scroll progress throughout document
-const observer = new IntersectionObserver(handleObserverIntersection, options);
+$(document).ready(function () {
+	// Store each section's offset at the start
+	let sections = $('article');
+	let menuItems = $('.menu--nav a');
 
-// observe each header tag in document with intersection observer
-headerTags.forEach( (headerTag) => {      
-  observer.observe(headerTag)
-})
+	$(window).on('scroll', function () {
+		let scrollPos = $(window).scrollTop();
+
+		// Iterate over each project section to check its position
+		sections.each(function () {
+			let section = $(this);
+			let sectionTop = section.offset().top - 24; // Adjust for any padding
+
+			// Check if the current scroll position is in this section
+			if (
+				scrollPos >= sectionTop &&
+				scrollPos < sectionTop + section.outerHeight()
+			) {
+				let currentId = section.attr('id');
+
+				// Remove 'active' class from all menu items, then add it to the current
+				menuItems.removeClass('active');
+				$('#nav a[href="#' + currentId + '"]').addClass('active');
+			}
+		});
+	});
+});
