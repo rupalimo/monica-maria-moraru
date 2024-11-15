@@ -11,7 +11,7 @@ $(document).ready(function () {
 		// Iterate over each project section to check its position
 		sections.each(function () {
 			let section = $(this);
-			let sectionTop = section.offset().top - 24; // Adjust for any padding
+			let sectionTop = section.offset().top; // Adjust for any padding
 
 			// Check if the current scroll position is in this section
 			if (
